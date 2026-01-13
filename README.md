@@ -15,6 +15,7 @@ Identify growth opportunities and optimize product offerings
 Improve customer retention and lifetime value
 
 Data Sources
+
 Customer Demographics: 1,500 customer records
 
 Product Catalog: 10 products across 5 categories
@@ -24,6 +25,7 @@ Transaction Data: 15,000 purchase records
 Website Interactions: 75,000 user interaction records
 
 Key Findings
+
 ✅ Identified 4 distinct customer segments with unique characteristics
 
 ✅ Achieved 85% segmentation accuracy using Random Forest classification
@@ -35,57 +37,79 @@ Key Findings
 ✅ Developed targeted marketing strategies for each customer segment
 
 🚀 Quick Start
+
 Prerequisites
+
 Python 3.8+
 
 pip package manager
 
 Installation & Setup
+
 Clone the repository
 
-
+```
 git clone https://github.com/Soundar-3711/ecommerce-customer-segmentation.git
+
 cd ecommerce-customer-segmentation
+
 Run automated setup
-
-
+```
+```
 chmod +x setup.sh
+
 ./setup.sh
+
 Manual setup (alternative)
-
-
+```
+```
 # Create virtual environment
+
 python3 -m venv venv
+
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+```
+```
 # Install dependencies
-pip install -r requirements.txt
 
+pip install -r requirements.txt
+```
+```
 # Create project structure
+
 mkdir -p data/raw data/processed data/external notebooks src models reports/figures
+```
 Running the Project
+
 Execute Complete Pipeline:
 
-
 python main.py
+```
+```
 Run Individual Components:
 
-
 # Data collection and generation
+
 python src/data_collection.py
 
 # Exploratory data analysis
+
 python src/eda.py
 
 # Machine learning modeling
+
 python src/modeling.py
 
 # Generate business insights
+
 python src/insights.py
+```
+```
 Jupyter Notebooks:
 
-
 jupyter lab notebooks/
+```
+```
 📁 Project Structure
 
 ecommerce-customer-segmentation/
@@ -113,8 +137,12 @@ ecommerce-customer-segmentation/
 ├── requirements.txt
 ├── setup.sh
 └── main.py                 # Main pipeline script
+```
+
 🔍 Analysis & Results
+
 Customer Segmentation
+
 Segment 0: High-Value Loyal Customers (25%)
 
 High spending and frequent purchases
@@ -142,6 +170,7 @@ Recent signups or infrequent activity
 Strategy: Onboarding, engagement campaigns
 
 Machine Learning Performance
+
 Clustering Accuracy: Silhouette Score 0.65, Calinski-Harabasz 450.2
 
 Classification Model: Random Forest with 85.3% accuracy
@@ -149,6 +178,7 @@ Classification Model: Random Forest with 85.3% accuracy
 Feature Importance: Monetary Value, Purchase Frequency, Recency
 
 Key Metrics
+
 Total Revenue: Comprehensive analysis of sales performance
 
 Customer Lifetime Value: Segmentation-based CLV calculations
@@ -158,7 +188,9 @@ Retention Rates: Segment-specific retention analysis
 Conversion Optimization: Data-driven improvement opportunities
 
 📈 Business Applications
+
 Marketing Strategies
+
 Personalized Campaigns: Segment-specific marketing messages
 
 Customer Retention: Targeted win-back programs
@@ -218,8 +250,11 @@ For Data Scientists
 from src.modeling import CustomerSegmenter
 
 # Initialize and train model
+
 segmenter = CustomerSegmenter()
+
 segmenter.fit(data)
+
 predictions = segmenter.predict(new_customers)
 
 For Business Analysts
@@ -229,6 +264,7 @@ from src.insights import BusinessInsights
 # Generate business recommendations
 
 insights = BusinessInsights()
+
 recommendations = insights.get_marketing_strategies(segment_id=0)
 
 🔮 Future Enhancements
