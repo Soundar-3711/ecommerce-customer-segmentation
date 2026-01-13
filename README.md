@@ -44,25 +44,25 @@ Python 3.8+
 
 pip package manager
 
+```
 Installation & Setup
 
 Clone the repository
 
-```
 git clone https://github.com/Soundar-3711/ecommerce-customer-segmentation.git
 
 cd ecommerce-customer-segmentation
-
+```
+```
 Run automated setup
-```
-```
+
 chmod +x setup.sh
 
 ./setup.sh
-
+```
+```
 Manual setup (alternative)
-```
-```
+
 # Create virtual environment
 
 python3 -m venv venv
@@ -110,6 +110,7 @@ Jupyter Notebooks:
 jupyter lab notebooks/
 ```
 ```
+
 📁 Project Structure
 
 ecommerce-customer-segmentation/
@@ -137,6 +138,7 @@ ecommerce-customer-segmentation/
 ├── requirements.txt
 ├── setup.sh
 └── main.py                 # Main pipeline script
+
 ```
 
 🔍 Analysis & Results
